@@ -1,6 +1,6 @@
 all: clean
-	@nasm -fmacho64 hello.asm
-	@ld -e _start -o hello hello.o -lSystem
-	@./hello
+	@nasm -fmacho64 main.asm
+	@ld -e _start -o main main.o -lSystem
+	@./main
 clean:
-	@rm -f hello.o hello
+	@rm -f main.o main
